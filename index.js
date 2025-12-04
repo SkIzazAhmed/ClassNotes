@@ -65,3 +65,5 @@ console.log(ae);
 /* 2 phase Memory Creation  and  Code Executaion 
 incase of Var We can use it before init and it will through Undefined which will affect the webpage
 incase of let we can not use it before init and if we still use it it will through reference error and the area above the var init is called Dead zone*/
+// Null == Undefined is true
+// NaN == NaN is False
