@@ -70,6 +70,7 @@ incase of let we can not use it before init and if we still use it it will throu
 // variable.toFormat(number of decimal places)
 // === checks datatype as well
 // == only checks value
+// Null === Undefined is false
 function abc(){
     let a=`aaaaaaaaggggggggggggg`
     let b=`bbbbbbbbeeeeee lllllll tttttt`
@@ -99,3 +100,43 @@ console.log(arr); // array printing same as Java
 for (count=0;count<10;count++){
     console.log(arr[count])
 }
+// function need to have a parenthesis
+// length is a property 
+arr.pop();
+console.log(arr); // popping the last element It is based on LIFO like stack
+// strings are immutable
+// stack and heap in ram storage
+// stack stores primitive data type 
+// heap stores non primitive data type
+// heap is dynamic stack is static
+// all primitive data type is pass by value
+// all non-reference datat type is pass by refetence
+// .toString(base) wil convert it to base 2 and will be in binary
+// type of array is OBJ
+// let a=["hi","hello"];
+// let o=a;
+//                           - - - > ["Hi","Hello"]
+//                      - -   - -
+//      pointer | o  -   - -  
+//      pointer | a  - -  
+//          Stack                       heap
+// console.log(Number(null)) --> 0
+// console.log(Number(undefined)) --> NaN
+/*
+let b=[1]
+let c=[1]
+console.log(b==c) --> False
+it will be false as we are comparing Objects and objects work on reference and one reference is different that other 
+*/
+/*
+let c=[1]
+let d=c
+console.log(d==c) --> True
+It will be true as we are comparing both references and both are same
+*/
+/*
+let a=[1,2,3,4]
+a.unshift(100)
+console.log(a) -->[100,1,2,3,4]
+unshift add it to the front 
+*/
