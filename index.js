@@ -70,3 +70,24 @@ incase of let we can not use it before init and if we still use it it will throu
 // variable.toFormat(number of decimal places)
 // === checks datatype as well
 // == only checks value
+function abc(){
+    let a=`aaaaaaaaggggggggggggg`
+    let b=`bbbbbbbbeeeeee lllllll tttttt`
+    console.log(a+b);
+}
+let count =0
+for(count =0;count<=10;count++){
+abc()
+}
+function fib(a,b){
+    console.log(a+b);
+    return (a+b);
+}
+let x=0;
+let y=1;
+console.log(x);
+for (count=2;count<10;count++){
+    let temp=fib(x,y);
+    x=y;
+    y=temp;
+}
