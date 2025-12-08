@@ -79,15 +79,23 @@ let count =0
 for(count =0;count<=10;count++){
 abc()
 }
-function fib(a,b){
-    console.log(a+b);
+function fib(a,b){ // Function description 
+    // console.log(a+b);
     return (a+b);
 }
+const arr=[]; // array declaration
+arr.push(0);
+// console.log(arr);
 let x=0;
 let y=1;
-console.log(x);
-for (count=2;count<10;count++){
+// console.log(x);
+for (count=2;count<=10;count++){ // array pushing
     let temp=fib(x,y);
     x=y;
     y=temp;
+    arr.push(temp);
+}
+console.log(arr); // array printing same as Java
+for (count=0;count<10;count++){
+    console.log(arr[count])
 }
