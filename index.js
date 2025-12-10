@@ -140,3 +140,47 @@ a.unshift(100)
 console.log(a) -->[100,1,2,3,4]
 unshift add it to the front 
 */
+/*
+const car={
+color:"Red";
+make:"Toyota";
+Year:2023;
+start: function(){
+console.log("This car has started");
+};
+drive: function(){
+console.log("Car is Driving");
+}
+} 
+*/
+function star(){
+    console.log("This car has started");
+}
+function dri(){
+    console.log("This car is Driving");
+}
+const car={
+color:"Red",
+make:"Toyota",
+Year:2023,
+start: star(),
+drive: dri(),
+repairing:function(who){
+    console.log("at "+who);
+}
+} 
+console.log(car.color);
+car.type="manual";
+console.log(car.type);
+delete car.type;
+console.log(car);
+car.repairing("Mech");
+car["repairing"]("Mech");
+// strict js and loose js
+//"use strict"; will toggle the js into strict js otherwise it will always be loose Js
+// we can add/reasign the value with car.key='value' or with car['key'] = 'value'
+//if we accesss an key which is still not defined in the obj will result in undefined
+//in arr the square bracks[] will consider any value with in [] as index
+//DOM ---> Document object model
+// DOM lets us update the website dynamically
+//DOM also uses class and id
