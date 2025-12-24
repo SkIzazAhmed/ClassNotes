@@ -1,0 +1,9 @@
+.Title{
+    color: Red;
+    font-size: 50px;
+}
+p{
+    color:lightblue;
+    font-family: 'Times New Roman', "Times, serif";
+    border: 2px dotted blue;
+}

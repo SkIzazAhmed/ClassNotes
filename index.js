@@ -184,3 +184,23 @@ car["repairing"]("Mech");
 //DOM ---> Document object model
 // DOM lets us update the website dynamically
 //DOM also uses class and id
+//...parameters within func defination defines a function that takes multiple inputs and store them as an array
+// the array name would be the parameter name that we pass through func defination
+/* 
+DOM Selectors are:-
+getElementById
+getElementByClassName
+getElementByTagName
+querySelector
+querySelectorAll
+*/
+// Js Is OOP Language which means that any extar code is treated as object
+console.log(document.getElementsByClassName("Title"))
+console.log(document.getElementsByTagName("p"))
+console.log(document.querySelector(".Title"))
+document.getElementsByClassName("Title").innerHTML="<b>Happy</b>";//The block of code inside the class Title
+// document.getElementsByClassName("Title").outerHTML="<b>Happy</b>"; the block of code we are serching for
+//if the js is dependent on the body then we need to declare it in Body
+document.getElementById("name").addEventListener("mousehover",function(){
+    console.log("Heyyyy")
+});
